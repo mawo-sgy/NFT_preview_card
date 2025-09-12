@@ -1,0 +1,149 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    /* ----------- COLOR ----------- */
+
+    /* ----- PRIMARY ----- */
+    
+    --Blue500: hsl(215, 51%, 70%);
+    --Cyan400: hsl(178, 100%, 50%);
+
+    /* ----- NEUTRAL ----- */
+
+    --Blue950mainBG: hsl(217, 54%, 11%);
+    --Blue900cardBG: hsl(216, 50%, 16%);
+    --Blue800line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+    /* ----------- FONT SIZE ----------- */
+
+    --text-paragraph: 1.8rem;
+    --text-h1: 2.2rem;
+    --text-h3: 1.4rem;
+    --text-h5: 1.3rem;
+
+    /* ----------- FONT WEIGHT ----------- */
+
+    --font-weight-light: 300;
+    --font-weight-normal: 400;
+    --font-weight-bold: 600;
+
+    /* ----------- FONT FAMILY ----------- */
+
+    --font-family: 'Outfit', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--Blue950mainBG);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.main-container {
+    width: 320px;
+    height: 570px;
+    background-color: var(--Blue900cardBG);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.img-md {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.img-sm {
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid white;
+}
+
+
+p {
+    font-size: var(--text-paragraph);
+    color: var(--Blue500);
+}
+
+h1 {
+    font-size: var(--text-h1);
+    color: var(--White);
+} 
+
+h3 {
+    font-size: var(--text-h3);
+}
+
+h5 {
+    font-size: var(--text-h5);
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: var(--Blue800line);
+}
+
+.box1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.box2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.eth {
+    display: flex;
+    gap: 5px;
+}
+
+.clock {
+    display: flex;
+    gap: 8px;
+}
+
+.eth-color {
+    color: var(--Cyan400);
+}
+
+.name-color {
+    color: var(--White);
+}
+
+.name-color:hover {
+    color: var(--Cyan400);
+}
+
+h1:hover {
+    color: var(--Cyan400);
+}
+
+.attribution {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 16px;
+    color: var(--White);
+}
+
+a {
+    color: var(--Cyan400);
+}
+
+/* .img-md:hover {
+    background: url(nft-preview-card-component-main/images/icon-view.svg);
+} */
